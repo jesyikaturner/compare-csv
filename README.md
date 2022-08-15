@@ -1,25 +1,32 @@
 # Compare CSVs
 
-Python script that automates saving images at different resolutions in Affinity Designer and moving them into a folder
+TODO
 
 ## Pre-requisites 
 
 - Python 3.7
-- PyAutoGUI
+- OpenPyxl
 
 ## Setup
 
 1. Install python3
 
-2. Install PyAutoGUI:
+2. Install OpenPyxl:
 ```bash
-    python3 -m pip install pyautogui
+    python3 -m pip install openpyxl
 ```
 
 ## Run
 
-**NOTE:** Has to be run from the folder where Affinity Designer saves the pictures
+- Run Program:
+
 ```bash
-    python3 automate_export.py "helloworld" --list 128 512
+    python3 compare_csv.py ./data/actual.csv ./data/expected.csv
+```
+
+- Run Tests:
+
+```bash
+    python3 test_compare_csv.py
 ```
 

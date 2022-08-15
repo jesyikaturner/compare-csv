@@ -1,10 +1,15 @@
 import math
 
+output_filepath = "log.txt"
 
-def write_to_file(line_to_write: str, output_filepath: str):
-    if output_filepath == "":
-        return
+
+def write_to_file(line_to_write: str):
+    """
+    Simple file writer that takes in a string and writes it
+    to a textfile.
+    """
     f = open(output_filepath, "a")
+
     print(f"{line_to_write}\n")
     f.write(f"{line_to_write}\n")
 

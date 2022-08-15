@@ -1,5 +1,5 @@
-col1, col2, col3
-rowa_a, row_b, row_c
-rowa_d, row_e, row_f
-rowa_g, row_h, row_i
-rowa_j, row_k, row_l
+Index, col1, col2, col3
+1, rowa_a, row_b, row_c
+2, rowa_d, row_e, row_f
+3, rowa_g, row_h, row_i
+4, rowa_j, row_k, row_l
