@@ -47,13 +47,15 @@ def make_headers_same(file1: pd.DataFrame, file2: pd.DataFrame):
 
 def write_chunk_differences_to_df(file1_df_chunks: list, file2_df_chunks: list):
     """
-    TODO: write description
+    Run through each of the df chunks from file1 and file2 and compare the differences
+    between them then return a DataFrame 
+
     Parameters:
         file1_df_chunks: pd.DataFrame -- chunks of file1 dataframe to compare
         file2_df_chunks: pd.DataFrame -- chunks of file2 dataframe to compare
 
     Returns:
-        file1_differences: pd.DataFrame --
+        file1_differences: pd.DataFrame -- 
         file2_differences: pd.DataFrame --
     """
     if len(file1_df_chunks) != len(file2_df_chunks):
@@ -176,7 +178,7 @@ def compare_csvs(file1_filepath: str, file2_filepath: str):
 
 def main():
     df = compare_csvs(sys.argv[1], sys.argv[2])
-    df.to_excel('results.xlsx')
+    df.to_excel('output/results.xlsx')
 
 
 if __name__ == '__main__':

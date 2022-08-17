@@ -1,6 +1,6 @@
 import math
 
-output_filepath = "log.txt"
+output_filepath = "output/log.txt"
 
 
 def write_to_file(line_to_write: str):

@@ -1,11 +1,13 @@
 # Compare CSVs
 
-TODO
+A small python program that compares two CSVs and finds the differences between them. The differences are output into an excel spreadsheet, listing the affected index, column and the data from each CSV.
 
 ## Pre-requisites 
 
-- Python 3.7
+- Python 3.8.10
 - OpenPyxl
+- Pandas
+- Numpy
 
 ## Setup
 
